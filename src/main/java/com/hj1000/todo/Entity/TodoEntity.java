@@ -3,6 +3,7 @@ package com.hj1000.todo.Entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity@Getter@Setter
@@ -25,7 +26,7 @@ public class TodoEntity extends BaseEntity{
     @Column(name = "task", length = 100)
     private String task;    // 할 일
     @Column(name = "date")
-    private LocalDateTime date; // 날짜
+    private LocalDate date; // 날짜
     @Column(name = "importance" ,length = 20)
     private String importance;  // 중요도
     @Column(name = "status", length = 20)
